@@ -1,0 +1,310 @@
+Started GET "/" for 127.0.0.1 at 2026-09-24 11:41:54 +0900
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 16)
+Completed 200 OK in 23ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 3439)
+
+
+Started GET "/home" for 127.0.0.1 at 2026-09-24 11:42:03 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/static_pages/home" for 127.0.0.1 at 2026-09-24 11:42:11 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.8ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 107.9ms | Allocations: 71377)
+Completed 200 OK in 112ms (Views: 110.3ms | ActiveRecord: 0.0ms | Allocations: 72148)
+
+
+  
+ArgumentError (unknown keyword: quirks_mode):
+  
+json (3.0.2) lib/json/common.rb:382:in `generate'
+json (3.0.2) lib/json/common.rb:382:in `generate'
+activesupport (7.0.4.3) lib/active_support/json/encoding.rb:110:in `stringify'
+activesupport (7.0.4.3) lib/active_support/json/encoding.rb:35:in `encode'
+activesupport (7.0.4.3) lib/active_support/json/encoding.rb:22:in `encode'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:562:in `dump'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:576:in `serialize'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:691:in `commit'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:511:in `[]='
+actionpack (7.0.4.3) lib/action_dispatch/middleware/session/cookie_store.rb:110:in `set_cookie'
+rack (2.2.24) lib/rack/session/abstract/id.rb:403:in `commit_session'
+rack (2.2.24) lib/rack/session/abstract/id.rb:268:in `context'
+rack (2.2.24) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.24) lib/rack/method_override.rb:24:in `call'
+rack (2.2.24) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.24) lib/rack/sendfile.rb:127:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.8) lib/puma/configuration.rb:252:in `call'
+puma (5.6.8) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.8) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.8) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.8) lib/puma/server.rb:443:in `process_client'
+puma (5.6.8) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/static_pages/home" for 127.0.0.1 at 2026-09-24 11:47:01 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 1098)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 1349)
+
+
+  
+ArgumentError (unknown keyword: quirks_mode):
+  
+json (3.0.2) lib/json/common.rb:382:in `generate'
+json (3.0.2) lib/json/common.rb:382:in `generate'
+activesupport (7.0.4.3) lib/active_support/json/encoding.rb:110:in `stringify'
+activesupport (7.0.4.3) lib/active_support/json/encoding.rb:35:in `encode'
+activesupport (7.0.4.3) lib/active_support/json/encoding.rb:22:in `encode'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:562:in `dump'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:576:in `serialize'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:691:in `commit'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:511:in `[]='
+actionpack (7.0.4.3) lib/action_dispatch/middleware/session/cookie_store.rb:110:in `set_cookie'
+rack (2.2.24) lib/rack/session/abstract/id.rb:403:in `commit_session'
+rack (2.2.24) lib/rack/session/abstract/id.rb:268:in `context'
+rack (2.2.24) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.24) lib/rack/method_override.rb:24:in `call'
+rack (2.2.24) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.24) lib/rack/sendfile.rb:127:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.8) lib/puma/configuration.rb:252:in `call'
+puma (5.6.8) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.8) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.8) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.8) lib/puma/server.rb:443:in `process_client'
+puma (5.6.8) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/static_pages/home" for 127.0.0.1 at 2026-09-24 11:47:04 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 1097)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 1345)
+
+
+  
+ArgumentError (unknown keyword: quirks_mode):
+  
+json (3.0.2) lib/json/common.rb:382:in `generate'
+json (3.0.2) lib/json/common.rb:382:in `generate'
+activesupport (7.0.4.3) lib/active_support/json/encoding.rb:110:in `stringify'
+activesupport (7.0.4.3) lib/active_support/json/encoding.rb:35:in `encode'
+activesupport (7.0.4.3) lib/active_support/json/encoding.rb:22:in `encode'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:562:in `dump'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:576:in `serialize'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:691:in `commit'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:511:in `[]='
+actionpack (7.0.4.3) lib/action_dispatch/middleware/session/cookie_store.rb:110:in `set_cookie'
+rack (2.2.24) lib/rack/session/abstract/id.rb:403:in `commit_session'
+rack (2.2.24) lib/rack/session/abstract/id.rb:268:in `context'
+rack (2.2.24) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.24) lib/rack/method_override.rb:24:in `call'
+rack (2.2.24) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.24) lib/rack/sendfile.rb:127:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.8) lib/puma/configuration.rb:252:in `call'
+puma (5.6.8) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.8) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.8) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.8) lib/puma/server.rb:443:in `process_client'
+puma (5.6.8) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2026-09-24 11:47:45 +0900
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 16)
+Completed 200 OK in 22ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 2020)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2026-09-24 11:47:55 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.2ms | Allocations: 262)
+  Rendered layout layouts/application.html.erb (Duration: 61.4ms | Allocations: 20996)
+Completed 200 OK in 70ms (Views: 63.8ms | ActiveRecord: 0.0ms | Allocations: 22369)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2026-10-08 11:06:09 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.1ms | Allocations: 96)
+  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 1555)
+Completed 200 OK in 31ms (Views: 30.1ms | Allocations: 2359)
+
+
+Started GET "/static_pages/help" for 127.0.0.1 at 2026-10-08 11:07:00 +0900
+Processing by StaticPagesController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 3.4ms | Allocations: 89)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 1254)
+Completed 200 OK in 19ms (Views: 18.0ms | Allocations: 1560)
+
+
+Started GET "/" for 127.0.0.1 at 2026-10-08 11:10:54 +0900
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 3ms (Views: 1.1ms | Allocations: 418)
+
+
+Started GET "/static_pages/help" for 127.0.0.1 at 2026-10-08 11:11:21 +0900
+Processing by StaticPagesController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 1.4ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 1507)
+Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 2302)
+
+
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2026-10-08 02:15:12.837164"], ["updated_at", "2026-10-08 02:15:12.837164"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/static_pages/about" for 127.0.0.1 at 2026-10-08 11:20:43 +0900
+Processing by StaticPagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 100)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 1508)
+Completed 200 OK in 22ms (Views: 21.7ms | Allocations: 2309)
+
+
+Started GET "/static_pages/about" for 127.0.0.1 at 2026-10-08 11:27:18 +0900
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 1.2ms | Allocations: 98)
+Completed 200 OK in 22ms (Views: 8.6ms | Allocations: 956)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2026-10-08 11:32:30 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 11.7ms | Allocations: 104)
+Completed 200 OK in 15ms (Views: 14.2ms | Allocations: 963)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2026-10-08 11:54:47 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 8.4ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 2669)
+Completed 200 OK in 40ms (Views: 34.4ms | Allocations: 3388)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2026-10-08 11:58:45 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.6ms | Allocations: 117)
+  Rendered layout layouts/application.html.erb (Duration: 46.0ms | Allocations: 2551)
+Completed 200 OK in 55ms (Views: 50.4ms | Allocations: 3270)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2026-10-15 11:06:57 +0900
+Processing by StaticPagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 3.6ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 2618)
+Completed 200 OK in 50ms (Views: 44.4ms | Allocations: 3420)
+
+
